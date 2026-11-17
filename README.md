@@ -1,22 +1,22 @@
 # MazeBot
-Vincent flum the IP seeker
-This one hugs the wall
+# Vincent flum the IP seeker
+# This one hugs the wall
 from BirdBrain import Finch
 myFinch = Finch()
 
 
 while True:
-    if myFinch.getDistance() > 33:
+    if myFinch.getDistance() > 35:
         myFinch.setMove('F',31,50)
     else:
         myFinch.setTurn('L',92,100)
-        if myFinch.getDistance() < 33:
-            myFinch.setTurn('R',188,100)
+        if myFinch.getDistance() < 35:
+            myFinch.setTurn('R',186,100)
 
 
 
-Node seach still work in progress 
-
+# Node seach still work in progress 
+"""
 from BirdBrain import Finch
 myFinch = Finch()
 nodes = []
@@ -59,7 +59,7 @@ while len(surroundings := collect_surroundings) < 4:
     
     
 myFinch.stopAll()
-
+"""
 
 
 
